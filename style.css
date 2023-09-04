@@ -70,7 +70,7 @@ body {
 .apresentacao {
     display: flex;
     padding: 20%;
-    background-image: url(/assets/marceneiro.png);
+    background-image: url(assets/marceneiro.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
