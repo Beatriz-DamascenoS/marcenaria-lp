@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+/* estilos globais */
+
+:root {
+    --cor-principal: #928868;
+    --cor-secundaria: #F9F9F9;
+    --cor-fundo-principal: #C5C0B0;
+    --cor-fundo-secundario: #F9F9F9;
+}
+
+p {
+    line-height: 28px;
+}
+
+.linha  {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.espacamento {
+    padding: 90px 20px;
+}
+
+.subtitulo {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    line-height: 38px;
+}
+
+.formulario__button {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    color: var(--cor-principal);
+    font-size: 18px;
+    background-color: var(--cor-fundo-secundario);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.coluna-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna-2 div {
+    width: 50%;
+}
+
+.box-espacamento {
+    padding: 40px;
+}
+
+/* final estilos globais */
+
+.apresentacao {
+    display: flex;
+    padding: 20%;
+    background-image: url(/assets/marceneiro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apresentacao__conteudo_titulo {
+    font-family: 'Krona One', sans-serif;
+    color: var(--cor-secundaria);
+    font-size: 36px;
+    text-align: center;
+}
+
+.nossos-servicos__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    gap: 1%;
+}
+
+.nossos-servicos__lista__item {
+    max-width: 230px;
+    width: 25%;
+}
+
+.lista__item {
+    font-size: 15px;
+}
+
+.sobre-nos {
+    display: flex;
+    text-align: center;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-secundaria);
+    width: 100%;
+}
+
+.sobre-nos__conteudo p {
+    max-width: 990px
+}
+
+.sobre-moveis {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.sobre-moveis img {
+    width: 50%;
+    height: 10%;
+}
+
+.sobre-deck {
+    background-color: var(--cor-fundo-principal);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+.sobre-deck img {
+    width: 50%;
+}
+
+.sobre-deck__conteudo {
+    width: 50%;
+}
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+}
+
+.formulario__titulo {
+    margin-bottom: 40px;
+}
+
+.formulario__form__campo {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cor-principal);
+    outline: none;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+}
+
+.formulario__form__campo::placeholder {
+    color: var(--cor-principal);
+    text-transform: capitalize;
+}
+
+.rodape {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 1em 1em;
+}
+
+
+.only-mobile {
+    display: none;
+}
+@media screen and (max-width: 980px) {
+    .only-mobile {
+        display: block;
+    }
+
+    .only-desk {
+        display: none;
+    }
+
+    .coluna-mobile-1 div  {
+        width: 100%;
+    }
+
+    .sobre-deck img, .sobre-moveis img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-fullsize {
+        width: auto!important; 
+        margin: 0 -60px;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+
+    .apresentacao__conteudo_titulo {
+        font-size: 20px;
+    }
+
+    .espacamento {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .subtitulo {
+        margin-bottom: 60px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .nossos-servicos__lista {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nossos-servicos__lista__item {
+        width: 100%;
+    }
+
+    .nossos-servicos__lista__item img {
+        margin-bottom: 14px;
+    }
+
+    .lista__item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apresentacao__conteudo_titulo {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
